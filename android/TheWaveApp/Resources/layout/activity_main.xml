@@ -31,31 +31,50 @@
         android:id="@+id/btnConnectionToggle"
     />
 
-    <com.google.android.material.button.MaterialButton
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cornerRadius="20dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginTop="10dp"
-        android:text="Get Distance"
-        android:textAllCaps="false"
-        android:backgroundTint="#333333"
-        android:id="@+id/btnStartRelay"
-    />
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="20dp"
+            android:text="Get Distance"
+            android:textAllCaps="false"
+            android:backgroundTint="#333333"
+            android:id="@+id/btnStartRelay"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+        />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="20dp"
+            android:layout_marginLeft="5dp"
+            android:text="Enable Continuous Data Streaming"
+            android:textAllCaps="false"
+            android:backgroundTint="#2583AF"
+            android:id="@+id/btnToggleContinuous"
+            android:layout_weight="0.5"
+        />
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:text="The Wave App"
         android:gravity="center"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
-        android:text="69 cm"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:textColor="@android:color/black"
         android:id="@+id/txtDistance"
-       
+        android:layout_marginTop="30dp"
     />
 
     
